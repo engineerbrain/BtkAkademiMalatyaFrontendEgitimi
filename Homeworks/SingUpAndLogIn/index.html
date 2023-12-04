@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUpAndLogIn</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+
+    <div class='container'>
+        <div class='button-reg'>
+            <div class='login'>SingUp</div>
+            <div class='singin'>LogIn</div>
+        </div>
+
+        <form name='enter'>
+            <input type='text' name='name' class='name-enter' placeholder='Enter your name' required />
+            <input type='text' name='mail' class='mail-enter' placeholder='Enter your e-mail address' required />
+            <input type='password' name='password' class='password-enter' placeholder='Enter your password' required />
+            <input type='password' name='rapiat-password' class='second-password' placeholder='Repeat your password' required />
+            <input type='submit' name='submit-reg' class='submit-reg' value='Sign Up' />
+            <input type='checkbox' name='conditions' class='check-conditions' required />
+            <a href='#' class='agree'>I have read and agree to the terms of registration</a>
+        </form>
+
+        <input type='submit' name='submit-enter' class='submit-enter' value='Log in' required />
+    </div>
+
+</body>
+</html>

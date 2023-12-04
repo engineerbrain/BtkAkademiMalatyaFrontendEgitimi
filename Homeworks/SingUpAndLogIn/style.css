@@ -1,0 +1,179 @@
+:root {
+  --violet: #32004a;
+  --black: #020202;
+  --button-violet: #040404;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #FFFFFF;
+}
+
+.container {
+  align-content: center;
+  display: flex;
+  margin: 140px auto;
+  width: 400px;
+  height: 500px;
+  background: var(--violet);
+  border-radius: 20px;
+}
+
+.login,
+.singin,
+.button .login,
+.button .singin {
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 10px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 200px;
+}
+
+.login {
+  margin-top: -20px;
+  height: 70px;
+  background: var(--violet);
+  border-top-right-radius: 15px;
+  box-shadow: 2px black;
+  transition: margin 0.5s, border-top-right-radius 0.8s, border-bottom-right-radius 0.8s;
+}
+
+.singin {
+  margin: 0 200px;
+  height: 50px;
+  background: var(--black);
+  border-bottom-left-radius: 15px;
+  transition: margin 0.5s, border-top-left-radius 0.8s, border-bottom-left-radius 0.8s;
+}
+
+.button .login {
+  margin: 0;
+  background: var(--black);
+  height: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 15px;
+  transition: margin 0.5s, border-top-right-radius 0.8s, border-bottom-right-radius 0.8s;
+}
+
+.button .singin {
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 10px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin: -20px 200px;
+  width: 200px;
+  height: 70px;
+  background: var(--violet);
+  border-top-left-radius: 15px;
+  transition: margin 0.5s, border-top-left-radius 0.8s, border-bottom-left-radius 0.8s;
+}
+
+.name-enter,
+.mail-enter,
+.password-enter,
+.second-password {
+  position: absolute;
+  width: 300px;
+  height: 35px;
+  background: #FFFFFF;
+  z-index: 1;
+  color: var(--violet);
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.name-enter {
+  margin: 100px 50px;
+}
+
+.mail-enter {
+  margin: 160px 50px;
+}
+
+.password-enter {
+  margin: 220px 50px;
+}
+
+.second-password {
+  margin: 280px 50px;
+}
+
+input[type='text']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder {
+  text-align: center;
+  color: var(--violet);
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.submit-reg,
+.submit-enter {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  z-index: 1;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border: none;
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.submit-reg {
+  margin: 400px 50px;
+  background: var(--button-violet);
+  color: #FFFFFF;
+}
+
+.submit-enter {
+  display: none;
+}
+
+.check-conditions {
+  position: absolute;
+  display: block;
+  margin: 340px 50px;
+  width: 20px;
+  height: 50px;
+  background: var(--button-violet);
+  z-index: 1;
+}
+
+.agree {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  position: absolute;
+  margin: 357px 80px;
+  color: #c486e0;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.button .second-password,
+.button .check-conditions,
+.button .agree,
+.button .submit-reg {
+  display: none;
+}
+
+.button .submit-enter {
+  display: block;
+  margin: 300px 50px;
+  background: var(--button-violet);
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  &:active {
+    opacity: 0.5;
+  }
+}
