@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 
 // CLASS
 class Footer extends Component {
@@ -19,12 +20,19 @@ class Footer extends Component {
     // CDM
 
     // Function
+    firstNewDate = () => {
+        return "2020"
+    }
+
+    secondNewDate(){
+        return ` ${new Date().getFullYear()} ` 
+    }
 
     // RENDER
     render() {
         return (
             <React.Fragment>
-                <footer className="bg-dark text-white text-center">
+                <footer className="bg-dark text-white text-center fixed-bottom">
                     {/* Grid container */}
                     <div className="container p-4 pb-0">
                         {/* Section: Social media */}
@@ -98,7 +106,7 @@ class Footer extends Component {
                         className="text-center p-3"
                         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
                     >
-                        © 2020- 2023 Copyright:
+                        © {this.firstNewDate()} - {this.secondNewDate()} Copyright:
                         <a className="text-body" href="https://btkakademi.com.tr/">
                             Btk Akademi
                         </a>
@@ -111,5 +119,5 @@ class Footer extends Component {
     } //end render
 } //end class
 
-// EXPORT HEADER
-export default Footer;
+// EXPORT HEADER (withTransaction)
+export default withTranslation()(Footer);
