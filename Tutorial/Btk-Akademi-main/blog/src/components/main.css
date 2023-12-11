@@ -57,3 +57,38 @@ header{
 #blog_id .blog_service .card-body h4,p{
    color:black;
 }
+
+/* ABOUT */
+#about_id{
+    background-image: url("../image/office.jpg");
+    background-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    padding:2rem;
+}
+
+/* CONTACT */
+#contact_id{
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+    padding:3rem .1rem;
+}
+
+/*BACK TO TOP*/
+#backToTop{
+    position: fixed;
+    bottom: 0.7rem;
+    right: 0.5rem;
+    background-color: #dc3545;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    /* display: none; */
+}
